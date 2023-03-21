@@ -1,6 +1,6 @@
 // Your Script here.
 
-const lookup = {
+var lookup = {
   'A': 'N','B': 'O','C': 'P','D': 'Q',
   'E': 'R','F': 'S','G': 'T','H': 'U',
   'I': 'V','J': 'W','K': 'X','L': 'Y',
@@ -13,7 +13,11 @@ const lookup = {
 function rot13(encodedStr){
    let decodedArr = []; // Your Result goes here
   // Only change code below this line
-
+var word = encryptedstring.split(" ");
+for (let index = 0; index < word.length; index++) {
+	
+}
+	
   return ;//return decodedArr
 }
 
