@@ -13,12 +13,19 @@ var lookup = {
 function rot13(encodedStr){
    let decodedArr = []; // Your Result goes here
   // Only change code below this line
-var word = encryptedstring.split(" ");
-for (let index = 0; index < word.length; index++) {
-	
+var words = encryptedstring.split(" ");
+var decryptedword = [];
+for (let index = 0; index < words.length; index++) {
+	var encryptedword = words[i];
+    var decryptedword = "";
+
+for (let j = 0; j < encryptedword.length; j++) {
+	decryptedword += lookup[ encryptedword.charAt(j)];
+}
+    decryptedwords.push(decryptedword)
 }
 	
-  return ;//return decodedArr
+  return decryptedwords.join("") ;//return decodedArr
 }
 
 // You can test your code by running the above function and printing it to console by pressing the run button at the top. To run it with input 36, uncomment the following line
