@@ -1,6 +1,6 @@
 // Your Script here.
 
-var lookup = {
+const lookup = {
   'A': 'N','B': 'O','C': 'P','D': 'Q',
   'E': 'R','F': 'S','G': 'T','H': 'U',
   'I': 'V','J': 'W','K': 'X','L': 'Y',
@@ -13,7 +13,7 @@ var lookup = {
 function rot13(encodedStr){
    let decodedArr = []; // Your Result goes here
   // Only change code below this line
-var words = encryptedstring.split(" ");
+const words = encryptedstring.split(" ");
 var decryptedword = [];
 for (let index = 0; index < words.length; index++) {
 	var encryptedword = words[i];
@@ -25,7 +25,7 @@ for (let j = 0; j < encryptedword.length; j++) {
     decryptedwords.push(decryptedword)
 }
 	
-  return decryptedwords.join(" ") ;//return decodedArr
+  return decryptedword.join(" ");//return decodedArr
 }
 
 // You can test your code by running the above function and printing it to console by pressing the run button at the top. To run it with input 36, uncomment the following line
