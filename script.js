@@ -19,19 +19,35 @@ const lookup = {
   'Y': 'L','Z': 'M', '?': '?', ',': ','
 };
 
+//function rot13(encodedStr){
+  // let decodedArr = []; // Your Result goes here
+  // Only change code below this line
+//const words = encryptedstring.split(" ");
+//var decryptedword = [];
+//for (let index = 0; index < words.length; index++) {
+	//var encryptedword = words[i];
+    //var decryptedword = "";
+
+//for (let j = 0; j < encryptedword.length; j++) {
+	//decryptedword += lookup[ encryptedword.charAt(j)];
+//}
+  //  decryptedwords.push(decryptedword)
+//}
 function rot13(encodedStr){
+   const words = encodedStr.split(" ");  // String to Array
    let decodedArr = []; // Your Result goes here
   // Only change code below this line
-const words = encryptedstring.split(" ");
-var decryptedword = [];
-for (let index = 0; index < words.length; index++) {
-	var encryptedword = words[i];
-    var decryptedword = "";
-
-for (let j = 0; j < encryptedword.length; j++) {
-	decryptedword += lookup[ encryptedword.charAt(j)];
-}
-    decryptedwords.push(decryptedword)
+   for(let i=0; i< words.length; i++){
+        const word = words[i]
+        let decoded_word  = ''
+        for(let j = 0; j < word.length; j++) {
+            const char = word.charAt(j)
+            const decoded_char = lookup[char]
+            decoded_word += decoded_char
+        }
+        decodedArr.push(decoded_word)
+     }
+        return decodedArr.join(" ");
 }
 	
   return decryptedword.join(" ");//return decodedArr
